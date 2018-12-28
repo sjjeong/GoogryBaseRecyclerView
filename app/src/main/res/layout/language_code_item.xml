@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="languageCode"
+                type="com.googry.googrybaserecyclerview.LanguageCode"/>
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+        <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@{languageCode.code}"
+                android:textSize="20sp"
+                tools:text="ko"/>
+
+
+        <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@{languageCode.language}"
+                android:textSize="20sp"
+                tools:text="한국어"/>
+
+
+    </LinearLayout>
+</layout>
